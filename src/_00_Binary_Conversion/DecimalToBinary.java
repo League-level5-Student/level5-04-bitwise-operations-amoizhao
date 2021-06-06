@@ -47,8 +47,7 @@ public class DecimalToBinary {
 		 *         1             1
 		 *         0             0
 		 *
-		 * Challenge:
-		 * ----------
+		 * 
 		 * What about negative decimal numbers? Does the same method work? Below is a
 		 * method that converts a decimal integer to a String of binary digits. Enter
 		 * a negative number and check if it matches your calculations.
@@ -56,7 +55,7 @@ public class DecimalToBinary {
 		 * 
 		*/
 		
-		System.out.println( convertDecimalToBinary( 43 ) );
+		System.out.println( convertDecimalToBinary( 4 ) );
 	}
 	
     public static String convertDecimalToBinary(int decimalNum) {
