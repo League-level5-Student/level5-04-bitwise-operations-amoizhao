@@ -59,13 +59,12 @@ public class Base64Decoder {
 	public static byte[] base64StringToByteArray(String file) {
 		byte[] byteArr = new byte[(int) (((file.length() * 8) - (file.length() * 2)) / 8)];
 		System.out.println(file.length());
-		for (int i = 0; i < file.length()-217; i+=4) { //217 wrong
+		for (int i = 0; i < file.length()-4; i+=4) { 
 			byteArr[i] = convert4CharsTo24Bits(file.substring(i, i + 4))[0];
 			byteArr[i + 1] = convert4CharsTo24Bits(file.substring(i, i + 4))[1];
 			byteArr[i + 2] = convert4CharsTo24Bits(file.substring(i, i + 4))[2];
 			System.out.println(i);
 		}
-		
 		return byteArr;
 	}
 }
